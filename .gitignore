@@ -3,6 +3,8 @@ __pycache__/
 *.py[cod]
 *$py.class
 output
+*.jsonl
+*.bin
 # C extensions
 *.so
 # Distribution / packaging

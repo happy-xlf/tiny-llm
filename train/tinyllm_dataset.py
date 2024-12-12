@@ -119,6 +119,7 @@ class SFTDataset(Dataset):
         with jsonlines.open(data_path) as reader:
             for obj in reader:
                 self.data.append(obj)
+        self.data = self.data[:2000]
         self.tokenizer = tokenizer
         self.max_length = max_length
         self.system = system
